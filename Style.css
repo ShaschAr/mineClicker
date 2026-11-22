@@ -2,3 +2,12 @@ body {
     background-color: #53503d;
     color: rgb(151, 128, 0);
 }
+.button {
+    background-color: #3a3634;
+    color: rgb(151, 128, 0);
+    width: 13.671875%;
+    height: 27.34375%;
+    position: fixed;
+    left: 43.1640625%;
+    top: 36.328125%;
+}
