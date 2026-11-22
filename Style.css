@@ -2,12 +2,24 @@ body {
     background-color: #53503d;
     color: rgb(151, 128, 0);
 }
+.text {
+    font-size: 5vw;
+    position: fixed;
+    left: 3vw;
+    background-color: #3a3634;
+    border: groove;
+}
 .button {
     background-color: #3a3634;
     color: rgb(151, 128, 0);
-    width: 13.671875%;
-    height: 27.34375%;
+    width: 14vw;
+    height: 14vw;
     position: fixed;
-    left: 43.1640625%;
-    top: 36.328125%;
+    left: 43vw;
+    top: 43vh;
+    border: groove;
+}
+.shoptable {
+    width: 100%;
+    text-align: right;
 }

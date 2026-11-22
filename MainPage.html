@@ -1,17 +1,27 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
     <link rel="stylesheet" href="Style.css">
+    <title>Mine Clicker</title>
 </head>
 <body>
     <button class="button", id="mainButton">Mine</button>
-    <p id = "counter">0</p>
+    
+    <p id = "counter", class = "text"><bold>$0</bold></p>
+
+    <table class = "shoptable">
+        <td>Shop</td>
+    </table>
+    
+    <p id="test"></p>
     <script>
         let counter = document.getElementById("counter");
         let button = document.getElementById("mainButton");
         let count = 0;
         button.addEventListener("click", function() {
             count++;
-            counter.innerHTML = count;
+            counter.innerHTML = "<bold>" + "$" + count + "</bold>";
         });
+
     </script>
 </body>
