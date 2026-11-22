@@ -2,7 +2,7 @@ body {
     background-color: #53503d;
     color: rgb(151, 128, 0);
 }
-.text {
+.score {
     font-size: 5vw;
     position: fixed;
     left: 3vw;
@@ -20,6 +20,10 @@ body {
     border: groove;
 }
 .shoptable {
-    width: 100%;
-    text-align: right;
+    width: 25%;
+    text-align: center;
+    background-color:rgb(151, 128, 0);
+    border: groove;
+    margin-left: 75%;
+    font-size:2vw;
 }

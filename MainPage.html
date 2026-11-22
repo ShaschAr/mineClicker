@@ -7,10 +7,14 @@
 <body>
     <button class="button", id="mainButton">Mine</button>
     
-    <p id = "counter", class = "text"><bold>$0</bold></p>
+    <p id = "counter", class = "score"><bold>$0</bold></p>
 
     <table class = "shoptable">
-        <td>Shop</td>
+        <tr id= "shop1">
+            <td>Pickaxe</td>
+            <td>$50</td>
+            <td>0</td>
+        </tr>
     </table>
     
     <p id="test"></p>
@@ -18,10 +22,24 @@
         let counter = document.getElementById("counter");
         let button = document.getElementById("mainButton");
         let count = 0;
+        let shop1 = document.getElementById("shop1");
         button.addEventListener("click", function() {
             count++;
             counter.innerHTML = "<bold>" + "$" + count + "</bold>";
         });
-
+        button.addEventListener("mouseover", function() {
+            button.style.backgroundColor = "#282524";
+        });
+        button.addEventListener("mouseout", function() {
+            button.style.backgroundColor = "#3a3634";
+        });
+        
+        shop1.style.backgroundColor = "#3a3634";
+        shop1.addEventListener("mouseover", function() {
+            shop1.style.backgroundColor = "#282524";
+        });
+        shop1.addEventListener("mouseout", function() {
+            shop1.style.backgroundColor = "#3a3634";
+        });
     </script>
 </body>
