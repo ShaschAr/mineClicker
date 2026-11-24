@@ -8,6 +8,7 @@ body {
     left: 3vw;
     background-color: #3a3634;
     border: groove;
+    border-width: 1vw;
 }
 .button {
     background-color: #3a3634;
@@ -18,7 +19,8 @@ body {
     left: 43vw;
     top: 43vh;
     border: groove;
-    font-size: 300%;
+    font-size: 3.75vw;
+    border-width: 1vw;
 }
 .shoptable {
     width: 25%;
@@ -27,4 +29,33 @@ body {
     border: groove;
     margin-left: 75%;
     font-size:2vw;
+    border-width: 1vw;
+}
+.inventoryButton {
+    background-color: #3a3634;
+    color: rgb(151, 128, 0);
+    border: groove;
+    height: 6vw;
+    width: 18vw;
+    position: fixed;
+    top: 88vh;
+    left: 5vw;
+    font-size: 3vw;
+    border-width: 1vw;
+}
+.inventoryTable {
+    position: fixed;
+    top: 78vh;
+    left: 0vw;
+    border: groove;
+    background-color: rgb(151, 128, 0);
+    border-width: 1vw;
+    width:100vw;
+    font-size:7vh;
+    visibility: hidden;
+}
+.Hidden {
+    background-color:black;
+    color:black;
+    user-select: none;
 }

@@ -5,41 +5,49 @@
     <title>Mine Clicker</title>
 </head>
 <body>
-    <button class="button", id="mainButton">Mine</button>
+    <button class="button" id="mainButton">Mine</button>
     
-    <p id = "counter", class = "score"><bold>$0</bold></p>
+    <p id = "counter" class = "score"><bold>$0</bold></p>
 
     <table class = "shoptable">
-        <tr id= "shop1">
-            <td>Pickaxe</td>
+        <tr id= "shop1" style="background-color:#3a3634">
+            <td>Shovel</td>
             <td>$50</td>
-            <td>0</td>
+            <td id="shovelCount">0</td>
+        </tr>
+        <tr id="shop2" style="background-color:#3a3634">
+            <td>Gloves</td>
+            <td>$200</td>
+            <td id="gloveCount">0</td>
         </tr>
     </table>
     
-    <p id="test"></p>
-    <script>
-        let counter = document.getElementById("counter");
-        let button = document.getElementById("mainButton");
-        let count = 0;
-        let shop1 = document.getElementById("shop1");
-        button.addEventListener("click", function() {
-            count++;
-            counter.innerHTML = "<bold>" + "$" + count + "</bold>";
-        });
-        button.addEventListener("mouseover", function() {
-            button.style.backgroundColor = "#282524";
-        });
-        button.addEventListener("mouseout", function() {
-            button.style.backgroundColor = "#3a3634";
-        });
-        
-        shop1.style.backgroundColor = "#3a3634";
-        shop1.addEventListener("mouseover", function() {
-            shop1.style.backgroundColor = "#282524";
-        });
-        shop1.addEventListener("mouseout", function() {
-            shop1.style.backgroundColor = "#3a3634";
-        });
-    </script>
+    <button class="inventoryButton" id="inventory">Inventory</button>
+    <table class="inventoryTable" id="slots">
+        <tr class="inventorySpaces" style="background-color:#3a3634">
+            <td style="width:3vw"><img src="Art/dirtArt.png"></td>
+            <td id="dirt">0</td>
+            <td style="width:3vw">Stone</td>
+            <td id="stone">0</td>
+            <td style="width:3vw">Iron</td>
+            <td id="iron">0</td>
+            <td style="width:3vw">Quartz</td>
+            <td id="quartz">0</td>
+            <td style="width:3vw">Coal</td>
+            <td id="coal">0</td>
+        </tr>
+        <tr class="inventorySpaces" style="background-color:#3a3634">
+            <td><img src="Art/copperArt.png"w></td>
+            <td id="copper">0</td>
+            <td>Gold</td>
+            <td id="gold">0</td>
+            <td>Emerald</td>
+            <td id="emerald">0</td>
+            <td>Diamond</td>
+            <td id="diamond">0</td>
+            <td class="Hidden">Metite</td>
+            <td class="Hidden" id="metite">0</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
 </body>
